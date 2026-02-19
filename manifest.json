@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Box Direct Link Copy",
+  "version": "0.1.1",
+  "description": "Copy Box direct links (/folder/{id}, /file/{id}) from list rows and row menus.",
+  "minimum_chrome_version": "114",
+  "homepage_url": "https://github.com/cloudnative-co/crx-box-direct-link",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "permissions": ["clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.box.com/*",
+        "https://*.app.box.com/*"
+      ],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
