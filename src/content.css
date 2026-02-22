@@ -3,11 +3,8 @@
   padding-right: 30px;
 }
 
-.crx-box-direct-link-button.in-name-cell {
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  min-height: 20px;
+.crx-box-direct-link-button.in-name-cell,
+.crx-box-direct-link-button.in-grid-overlay {
   margin: 0;
   padding: 0;
   border: 1px solid #93c5fd;
@@ -17,18 +14,29 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.crx-box-direct-link-button.in-name-cell {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   position: absolute;
   right: 6px;
   top: 50%;
   transform: translateY(-50%) scale(1);
   z-index: 2;
   box-shadow: 0 1px 3px rgba(2, 6, 23, 0.22);
-  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.crx-box-direct-link-button.in-name-cell:hover,
+.crx-box-direct-link-button.in-grid-overlay:hover {
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
 }
 
 .crx-box-direct-link-button.in-name-cell:hover {
-  border-color: #3b82f6;
-  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
   transform: translateY(-50%) scale(1.08);
 }
 
@@ -39,6 +47,40 @@
 
 .crx-box-direct-link-button.in-name-cell.is-pending {
   opacity: 0.85;
+}
+
+.crx-box-direct-link-grid-overlay-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2147483645;
+}
+
+.crx-box-direct-link-button.in-grid-overlay {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  min-height: 22px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: auto;
+  z-index: 6;
+  box-shadow: 0 1px 3px rgba(2, 6, 23, 0.22);
+  transform: scale(1);
+}
+
+.crx-box-direct-link-button.in-grid-overlay:hover {
+  transform: scale(1.08);
+}
+
+.crx-box-direct-link-button.in-grid-overlay:active,
+.crx-box-direct-link-button.in-grid-overlay.is-pending {
+  transform: scale(0.93);
+}
+
+.crx-box-direct-link-button.in-grid-overlay.is-pending {
+  opacity: 0.9;
 }
 
 .crx-box-direct-link-icon {

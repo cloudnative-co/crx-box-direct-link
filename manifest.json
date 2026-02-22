@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Box Direct Link Copy",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Copy Box direct links (/folder/{id}, /file/{id}) from list rows and row menus.",
   "minimum_chrome_version": "114",
   "homepage_url": "https://github.com/cloudnative-co/crx-box-direct-link",

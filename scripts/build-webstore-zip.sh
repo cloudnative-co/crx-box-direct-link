@@ -25,6 +25,7 @@ FILES=(
   manifest.json
   LICENSE
   README.md
+  README_en.md
   src/content.js
   src/content.css
   assets/icons/icon16.png
