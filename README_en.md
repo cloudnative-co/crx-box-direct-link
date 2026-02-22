@@ -25,13 +25,24 @@ A Chrome extension that lets you copy Box direct links (not temporary shared lin
 - Click the chain icon at the top-left of each card
 - Or open `...` menu and click `Copy direct link`
 
-## Installation (Developer Mode)
+## Installation
 
-1. Open `chrome://extensions` in Chrome
-2. Enable `Developer mode` (top right)
-3. Click `Load unpacked`
-4. Select this repository directory
-5. Open a Box listing page and verify behavior
+### Install from GitHub Release Package (Recommended)
+
+1. Download the latest `crx-box-direct-link-v*.zip` from [Releases](https://github.com/cloudnative-co/crx-box-direct-link/releases)
+2. Extract the zip to any folder (make sure `manifest.json` is in the extracted folder)
+3. Open `chrome://extensions` in Chrome
+4. Enable `Developer mode` (top right)
+5. Click `Load unpacked`
+6. Select the extracted folder from step 2
+
+### Install from Source (For Development)
+
+1. Get this repository locally
+2. Open `chrome://extensions` in Chrome
+3. Enable `Developer mode` (top right)
+4. Click `Load unpacked`
+5. Select this repository directory
 
 ## Known Limitations
 
